@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vsgmfss_fortuna"
+version = "1.0.0"
+description = "GMFSS_Fortuna function for VapourSynth"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "HolyWu", email = "holywu@gmail.com"}]
+keywords = ["GMFSS_Fortuna", "VapourSynth"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Multimedia :: Video"
+]
+dependencies = [
+  "cupy-cuda11x>=12.0.0",
+  "numpy>=1.24.2",
+  "tensorrt>=8.6.0",
+  "torch>=1.13.1",
+  "torch-tensorrt-fx-only>=1.4.0.dev0",
+  "VapourSynth>=55"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/HolyWu/vs-gmfss_fortuna"
+"Bug Tracker" = "https://github.com/HolyWu/vs-gmfss_fortuna/issues"
